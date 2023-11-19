@@ -67,10 +67,8 @@
 # MAGIC         "instrumentalness"
 # MAGIC     )
 # MAGIC )
-# MAGIC
-# MAGIC # Muestra los resultados
-# MAGIC clean_delta_df.show()
-# MAGIC
-# MAGIC # Guarda el DataFrame transformado como una nueva tabla Delta
-# MAGIC clean_delta_df.write.format("delta").mode("overwrite").save('/FileStore/tables/CleanUniversalTopSpotifySongs.delta')
-# MAGIC
+
+# COMMAND ----------
+
+clean_delta_df.write.format("delta").mode("overwrite").save('/FileStore/tables/CleanUniversalTopSpotifySongs.delta')
+clean_delta_df.show()

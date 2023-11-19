@@ -87,8 +87,7 @@ plt.show()
 
 # COMMAND ----------
 
-df3 = query_result3.toPandas()
-
+df3 = query_result3.toPandas()12
 import seaborn as sns
 plt.figure(figsize=(12, 6))
 sns.lineplot(x='snapshot_date', y='mean_daily_rank', hue='upper_artists', data=df3)

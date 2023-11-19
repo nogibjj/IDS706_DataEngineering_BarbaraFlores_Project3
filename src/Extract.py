@@ -46,9 +46,7 @@ schema = StructType([
   StructField("acousticness", DoubleType(),  True),
   StructField("instrumentalness", DoubleType(),  True),
   StructField("liveness", DoubleType(),  True),
-
 ])
-
 
 UniversalTopSpotifySongs=spark.read.csv("dbfs:/FileStore/tables/UniversalTopSpotifySongs.csv", header=True, schema=schema)
 UniversalTopSpotifySongs.write.mode("overwrite").saveAsTable("RawUniversalTopSpotifySongs")
