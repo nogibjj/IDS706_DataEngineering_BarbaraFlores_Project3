@@ -67,8 +67,6 @@
 # MAGIC         "instrumentalness"
 # MAGIC     )
 # MAGIC )
-
-# COMMAND ----------
-
-clean_delta_df.write.format("delta").mode("overwrite").save('/FileStore/tables/CleanUniversalTopSpotifySongs.delta')
-clean_delta_df.show()
+# MAGIC
+# MAGIC clean_delta_df.write.format("delta").mode("overwrite").save('/FileStore/tables/CleanUniversalTopSpotifySongs.delta')
+# MAGIC clean_delta_df.show()
