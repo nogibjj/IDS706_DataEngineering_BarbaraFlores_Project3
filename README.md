@@ -47,3 +47,7 @@ For this project, we chose to utilize Delta Lake as our data storage system. Del
 ![13.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/13.png)
 
 ![14.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/14.png)
+
+
+### 📊 Video Tutorial
+The following [YouTube link](https://youtu.be/7IdvxX5F508) shows a clear, concise walkthrough and demonstration of the project
