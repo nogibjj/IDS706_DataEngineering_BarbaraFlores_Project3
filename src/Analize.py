@@ -97,10 +97,6 @@ df3
 
 # COMMAND ----------
 
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-
 plt.figure(figsize=(12, 6))
 sns.lineplot(x='snapshot_date', y='mean_daily_rank', hue='upper_artists', data=df3)
 
