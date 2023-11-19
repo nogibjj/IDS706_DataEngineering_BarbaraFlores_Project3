@@ -5,7 +5,6 @@
 # COMMAND ----------
 
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import upper
 
 spark = SparkSession.builder.appName("Delta").getOrCreate()
 
