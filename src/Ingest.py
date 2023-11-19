@@ -62,7 +62,7 @@ UniversalTopSpotifySongs.write.mode("overwrite").saveAsTable("RawUniversalTopSpo
 
 # COMMAND ----------
 
-delta_file_path = '/FileStore/tables/UniversalTopSpotifySongs.delta'
+delta_file_path = '/FileStore/tables/RawUniversalTopSpotifySongs.delta'
 spark_db.write.format("delta").mode("overwrite").save(delta_file_path)
 delta_df = spark.read.format("delta").load(delta_file_path)
 delta_df.show()
