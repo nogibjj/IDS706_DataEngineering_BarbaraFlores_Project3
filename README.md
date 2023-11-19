@@ -10,7 +10,7 @@ IDS706_DataEngineering_BarbaraFlores_Project3
 
 The main goal of this project is to develop a meticulously documented Databricks notebook that performs ETL operations, ensuring effective use of Delta Lake for data storage, and employing Spark SQL for the necessary transformations.
 
-### 📊 Video Tutorial
+## 🎥 Video Tutorial
 The following [YouTube link](https://youtu.be/7IdvxX5F508) shows a clear, concise walkthrough and demonstration of the project
 
 
