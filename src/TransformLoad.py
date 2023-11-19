@@ -1,32 +1,4 @@
 # Databricks notebook source
-# MAGIC %sql
-# MAGIC SELECT
-# MAGIC   id
-# MAGIC   ,spotify_id
-# MAGIC   ,UPPER(name) AS upper_name
-# MAGIC   ,UPPER(artists) AS upper_artists
-# MAGIC   ,daily_rank
-# MAGIC   ,daily_movement
-# MAGIC   ,weekly_movement
-# MAGIC   ,country
-# MAGIC   ,snapshot_date
-# MAGIC   ,popularity
-# MAGIC   ,is_explicit
-# MAGIC   ,duration_ms
-# MAGIC   ,UPPER(album_name) AS album_name
-# MAGIC   ,DATE(album_release_date) AS album_release_date
-# MAGIC   ,danceability
-# MAGIC   ,energy
-# MAGIC   ,key
-# MAGIC   ,loudness
-# MAGIC   ,mode
-# MAGIC   ,speechiness
-# MAGIC   ,acousticness
-# MAGIC   ,instrumentalness
-# MAGIC FROM RawUniversalTopSpotifySongs
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ### Delta Table
 
