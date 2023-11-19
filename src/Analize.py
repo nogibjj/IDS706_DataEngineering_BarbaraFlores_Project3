@@ -70,7 +70,6 @@ query_result3.show()
 # COMMAND ----------
 
 import matplotlib.pyplot as plt
-import pandas as pd
 
 # Convierte el resultado de la consulta Spark SQL a un DataFrame de pandas
 db_p = query_result.toPandas()
