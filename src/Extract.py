@@ -19,7 +19,7 @@ spark_db.write.format("delta").mode("overwrite").save(file_path)
 
 # COMMAND ----------
 
-from pyspark.sql.types import DoubleType, IntegerType, StringType, StructType, StructField, LongType
+from pyspark.sql.types import DoubleType, StringType, StructType, StructField, LongType
 
 schema = StructType([
   StructField("id", LongType(),  True),
