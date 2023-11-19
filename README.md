@@ -45,6 +45,24 @@ The loading operation was also performed in the [TransformLoad.py](https://githu
 
 Spark SQL plays a pivotal role in our ETL pipeline, driving effective data transformations across all stages. It is strategically implemented in [Extract.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/Extract.py)  to read and convert data into a Spark DataFrame, in [TransformLoad.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/TransformLoad.py) to apply transformations on the RawUniversalTopSpotifySongs DataFrame, and in [Analize.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/Analize.py)  to perform advanced analytics on the CleanUniversalTopSpotifySongs Delta table. This consistent use of Spark SQL underscores our commitment to leveraging advanced technologies for efficient and effective data processing throughout the entire pipeline.
 
+### 📈 Visualization and Conclusion
+In the file [Analize.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/Analize.py), we can observe the analysis of our data. On a global scale and during the evaluation period (from October 18, 2023, to November 5, 2023), the most listened-to artists on Spotify, within the top 50 of various countries, included:
+
+- "TAYLOR SWIFT"
+- "BAD BUNNY"
+- "DOJA CAT"
+- "BIZARRAP"
+- "MILO J"
+- "TATE MCRAE"
+- "IÑIGO QUINTERO"
+
+Subsequently, we can visualize how the average position of each artist behaved in the rankings across different countries in the following graph.
+
+The analysis of the dataset spanning from October 18, 2023, to November 5, 2023, reveals a global music landscape dominated by artists such as "TAYLOR SWIFT," "BAD BUNNY," "DOJA CAT," and others, consistently featured in the top 50 charts of various countries. This suggests not only their widespread appeal but also the existence of diverse musical preferences globally, spanning genres from pop to Latin and urban. The international presence of artists like "BAD BUNNY" and "DOJA CAT" underscores the influence of cross-cultural collaborations on global popularity. Examining the artists' average rankings over time may uncover periodic trends, shedding light on the dynamic nature of music preferences. In essence, this analysis provides a snapshot of the music industry during the specified period, offering insights into both the consistent popularity of certain artists and the ever-evolving global musical landscape.
+
+### 📸 Workflow Snapshot
+In the upcoming section, we provide a visual walkthrough of our data engineering and analysis process. Through a series of screenshots, you'll be guided step by step, gaining insights into the intricacies of our workflow. These snapshots offer a comprehensive view of the tools, methods, and key stages that contribute to our data analysis journey. Let's dive into the details and explore the inner workings of our process
+
 ![01.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/01.png)
 
 ![02.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/02.png)
