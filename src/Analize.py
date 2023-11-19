@@ -90,9 +90,6 @@ plt.show()
 # COMMAND ----------
 
 df3 = query_result3.toPandas()
-df3
-
-# COMMAND ----------
 
 import seaborn as sns
 plt.figure(figsize=(12, 6))
