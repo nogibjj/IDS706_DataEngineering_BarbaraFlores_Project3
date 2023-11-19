@@ -1,5 +1,8 @@
 # Databricks notebook source
 import pandas as pd
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("MyApp").getOrCreate()
+
 my_db=pd.read_csv("../data/UniversalTopSpotifySongs.csv")
 spark_db=spark.createDataFrame(my_db)
 
@@ -61,6 +64,3 @@ UniversalTopSpotifySongs.select("spotify_id","name","artists","daily_movement","
 # COMMAND ----------
 
 UniversalTopSpotifySongs.write.mode("overwrite").saveAsTable("RawUniversalTopSpotifySongs")
-
-
-
