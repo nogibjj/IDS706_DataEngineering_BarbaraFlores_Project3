@@ -41,7 +41,9 @@ Data transformation took place in the [TransformLoad.py](https://github.com/nogi
 The loading operation was also performed in the [TransformLoad.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/TransformLoad.py) file. The transformed data was written to a Delta table, specifically to the file `/FileStore/tables/CleanUniversalTopSpotifySongs.delta`. This process ensures that the transformed data is efficiently and structurally available for further analysis.
 
 
+### 📈 Spark SQL Implementation
 
+Spark SQL plays a pivotal role in our ETL pipeline, driving effective data transformations across all stages. It is strategically implemented in [Extract.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/Extract.py)  to read and convert data into a Spark DataFrame, in [TransformLoad.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/TransformLoad.py) to apply transformations on the RawUniversalTopSpotifySongs DataFrame, and in [Analize.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/blob/main/src/Analize.py)  to perform advanced analytics on the CleanUniversalTopSpotifySongs Delta table. This consistent use of Spark SQL underscores our commitment to leveraging advanced technologies for efficient and effective data processing throughout the entire pipeline.
 
 ![01.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/01.png)
 
