@@ -27,3 +27,20 @@ This dataset comprises 25 variables (columns) and was extracted on 2023-11-05. I
 
 ![05.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/05.png)
 
+![06.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/06.png)
+
+![07.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/07.png)
+
+![08.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/08.png)
+
+![09.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/09.png)
+
+![10.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/10.png)
+
+![11.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/11.png)
+
+![12.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/12.png)
+
+![13.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/13.png)
+
+![14.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/14.png)
