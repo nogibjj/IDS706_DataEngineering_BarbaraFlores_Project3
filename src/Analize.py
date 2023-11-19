@@ -70,24 +70,22 @@ query_result3.show()
 # COMMAND ----------
 
 import matplotlib.pyplot as plt
-import seaborn as sns
+import pandas as pd
 
+# Convierte el resultado de la consulta Spark SQL a un DataFrame de pandas
 db_p = query_result.toPandas()
 
+# Crea el gráfico de barras usando Matplotlib
 plt.figure(figsize=(12, 6))
-sns.barplot(x='upper_artists', y='records_count', data=db_p)
+plt.bar(db_p['upper_artists'], db_p['records_count'], color='skyblue')
 
 plt.xticks(rotation=45, ha='right')
-
-
 plt.xlabel('Artist')
 plt.ylabel('Number of Records')
 plt.title('Number of Records per Artist')
 
 plt.tight_layout()
 plt.show()
-
-
 
 # COMMAND ----------
 
@@ -96,6 +94,7 @@ df3
 
 # COMMAND ----------
 
+import seaborn as sns
 plt.figure(figsize=(12, 6))
 sns.lineplot(x='snapshot_date', y='mean_daily_rank', hue='upper_artists', data=df3)
 
