@@ -86,7 +86,6 @@ plt.show()
 # COMMAND ----------
 
 import seaborn as sns
-import pandas as pd
 
 df3 = query_result3.toPandas()
 df3 = df3.sort_values(by='snapshot_date')
