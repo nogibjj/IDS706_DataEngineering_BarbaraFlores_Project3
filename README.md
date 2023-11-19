@@ -56,7 +56,12 @@ In the file [Analize.py](https://github.com/nogibjj/IDS706_DataEngineering_Barba
 - "TATE MCRAE"
 - "IÑIGO QUINTERO"
 
+![15.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/15.png)  
+
 Subsequently, we can visualize how the average position of each artist behaved in the rankings across different countries in the following graph.
+
+![16.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/16.png)  
+
 
 The analysis of the dataset spanning from October 18, 2023, to November 5, 2023, reveals a global music landscape dominated by artists such as "TAYLOR SWIFT," "BAD BUNNY," "DOJA CAT," and others, consistently featured in the top 50 charts of various countries. This suggests not only their widespread appeal but also the existence of diverse musical preferences globally, spanning genres from pop to Latin and urban. The international presence of artists like "BAD BUNNY" and "DOJA CAT" underscores the influence of cross-cultural collaborations on global popularity. Examining the artists' average rankings over time may uncover periodic trends, shedding light on the dynamic nature of music preferences. In essence, this analysis provides a snapshot of the music industry during the specified period, offering insights into both the consistent popularity of certain artists and the ever-evolving global musical landscape.
 
