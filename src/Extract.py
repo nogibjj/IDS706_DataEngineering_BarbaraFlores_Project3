@@ -1,7 +1,7 @@
 # Databricks notebook source
 import pandas as pd
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName("MyApp").getOrCreate()
+spark=SparkSession.builder.getOrCreate()
 
 my_db=pd.read_csv("../data/UniversalTopSpotifySongs.csv")
 spark_db=spark.createDataFrame(my_db)
@@ -16,11 +16,6 @@ spark_db.write.mode('overwrite').csv(file_path)
 
 file_path = '/FileStore/tables/UniversalTopSpotifySongs.delta'
 spark_db.write.format("delta").mode("overwrite").save(file_path)
-
-# COMMAND ----------
-
-from pyspark.sql import SparkSession
-spark=SparkSession.builder.getOrCreate()
 
 # COMMAND ----------
 
