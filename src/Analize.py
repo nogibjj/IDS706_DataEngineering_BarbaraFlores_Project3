@@ -70,10 +70,8 @@ query_result3.show()
 
 import matplotlib.pyplot as plt
 
-# Convierte el resultado de la consulta Spark SQL a un DataFrame de pandas
 db_p = query_result.toPandas()
 
-# Crea el gráfico de barras usando Matplotlib
 plt.figure(figsize=(12, 6))
 plt.bar(db_p['upper_artists'], db_p['records_count'], color='skyblue')
 
@@ -87,8 +85,12 @@ plt.show()
 
 # COMMAND ----------
 
-df3 = query_result3.toPandas()
 import seaborn as sns
+import pandas as pd
+
+df3 = query_result3.toPandas()
+df3 = df3.sort_values(by='snapshot_date')
+
 plt.figure(figsize=(12, 6))
 sns.lineplot(x='snapshot_date', y='mean_daily_rank', hue='upper_artists', data=df3)
 
@@ -102,3 +104,10 @@ plt.title('Mean Daily Rank Over Time for Top 5 Artists')
 plt.tight_layout()
 plt.show()
 
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC The analysis of the dataset spanning from October 18, 2023, to November 5, 2023, reveals a global music landscape dominated by artists such as "TAYLOR SWIFT," "BAD BUNNY," "DOJA CAT," and others, consistently featured in the top 50 charts of various countries. This suggests not only their widespread appeal but also the existence of diverse musical preferences globally, spanning genres from pop to Latin and urban. The international presence of artists like "BAD BUNNY" and "DOJA CAT" underscores the influence of cross-cultural collaborations on global popularity. Examining the artists' average rankings over time may uncover periodic trends, shedding light on the dynamic nature of music preferences. In essence, this analysis provides a snapshot of the music industry during the specified period, offering insights into both the consistent popularity of certain artists and the ever-evolving global musical landscape.
+# MAGIC
+# MAGIC
