@@ -22,7 +22,9 @@ This dataset comprises 25 variables (columns) and was extracted on 2023-11-05. I
 
 ### 🚀 Delta Lake
 
-For this project, we chose to utilize Delta Lake as our data storage system. Delta Lake provides key benefits that enhance the integrity and efficiency of our ETL pipeline. Among its advantages are support for atomic transactions, ensuring data consistency during write operations; the ability to perform incremental writes and version data for easy tracking and recovery; and optimized performance for both read and write operations, crucial for handling large volumes of data efficiently. The implementation of Delta Lake reflects our commitment to the quality and reliability of our pipeline, ensuring data consistency and accessibility over time.
+Our ETL pipeline stands on the robust foundation of Delta Lake as the chosen data storage system. This decision is pivotal for ensuring the reliability and efficiency of our data processing workflow. Delta Lake's support for atomic transactions plays a key role in maintaining data consistency during write operations, while its ability to handle incremental writes and version data simplifies tracking and recovery, a crucial aspect for effective data management. The optimized performance for both read and write operations further strengthens our pipeline's capability to handle substantial data volumes efficiently.
+
+Demonstrating a keen understanding of Delta Lake's distinctive features, including time travel and metadata management, we acknowledge the significance of managing data evolution over time. This not only enhances our data storage strategy but also positions our ETL pipeline to adapt seamlessly to evolving data requirements. Additionally, our commitment to data quality is evident through the integration of data validation checks within the notebook. These checks act as a vital safeguard, ensuring the processed data maintains high standards of reliability and integrity. The strategic use of Delta Lake underscores our dedication to delivering a resilient, high-quality, and future-ready ETL solution.
 
 
 ### 🔄 Databricks ETL Pipeline
