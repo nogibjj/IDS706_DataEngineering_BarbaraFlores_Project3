@@ -16,6 +16,9 @@ For this project, we will utilize the [Top Spotify Songs in 73 Countries](https:
 
 This dataset comprises 25 variables (columns) and was extracted on 2023-11-05. In total, it contains 72.959 records.
 
+## 📊 Delta Lake
+
+For this project, we chose to utilize Delta Lake as our data storage system. Delta Lake provides key benefits that enhance the integrity and efficiency of our ETL pipeline. Among its advantages are support for atomic transactions, ensuring data consistency during write operations; the ability to perform incremental writes and version data for easy tracking and recovery; and optimized performance for both read and write operations, crucial for handling large volumes of data efficiently. The implementation of Delta Lake reflects our commitment to the quality and reliability of our pipeline, ensuring data consistency and accessibility over time.
 
 ![01.png](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project3/main/images/01.png)
 
