@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC ### Extract
+
+# COMMAND ----------
+
 import pandas as pd
 from pyspark.sql import SparkSession
 spark=SparkSession.builder.getOrCreate()
@@ -9,13 +14,9 @@ spark_db=spark.createDataFrame(my_db)
 
 # COMMAND ----------
 
-file_path=f'/FileStore/tables/{"UniversalTopSpotifySongs"}.csv'
-spark_db.write.mode('overwrite').csv(file_path)
+csv_file_path=f'/FileStore/tables/{"UniversalTopSpotifySongs"}.csv'
+spark_db.write.mode('overwrite').csv(csv_file_path)
 
-# COMMAND ----------
-
-file_path = '/FileStore/tables/UniversalTopSpotifySongs.delta'
-spark_db.write.format("delta").mode("overwrite").save(file_path)
 
 # COMMAND ----------
 
@@ -48,14 +49,20 @@ schema = StructType([
 
 ])
 
-csv_file_path="dbfs:/FileStore/tables/UniversalTopSpotifySongs.csv"
-UniversalTopSpotifySongs=spark.read.csv(csv_file_path, header=True, schema=schema)
 
-# COMMAND ----------
-
-UniversalTopSpotifySongs.select("spotify_id","name","artists","daily_movement","weekly_movement","album_name","album_release_date","daily_rank").show()
-
-
-# COMMAND ----------
-
+UniversalTopSpotifySongs=spark.read.csv("dbfs:/FileStore/tables/UniversalTopSpotifySongs.csv", header=True, schema=schema)
 UniversalTopSpotifySongs.write.mode("overwrite").saveAsTable("RawUniversalTopSpotifySongs")
+
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ### Save and Display Delta Table
+# MAGIC
+
+# COMMAND ----------
+
+delta_file_path = '/FileStore/tables/UniversalTopSpotifySongs.delta'
+spark_db.write.format("delta").mode("overwrite").save(delta_file_path)
+delta_df = spark.read.format("delta").load(delta_file_path)
+delta_df.show()
